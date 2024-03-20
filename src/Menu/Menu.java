@@ -5,7 +5,14 @@ import Logica.*;
 
 public class Menu {
 
-	private void menu() {
+	/*public void menu() {
+		this.opcion();
+	}
+	public static void main(String[] args) {
+		new Menu();
+	}
+	
+	private void opcion() {
 		Scanner sc = new Scanner(System.in);
 		int op = 0;
 		do {
@@ -37,14 +44,21 @@ public class Menu {
 	}
 
 	private void SaberTMBmujeres(Scanner sc) {
-		TMB m;
+		TMB h;
 		System.out.println("Ingrese el peso");
 		double peso_k = sc.nextDouble();
 		System.out.println("Ingrese la altura");
 		double altura_cen = sc.nextDouble();
 		System.out.println("Ingrese la edad");
 		double edad = sc.nextDouble();
-		m = new TMBmujeres(peso_k, altura_cen, edad);
-		System.out.println(m.calculo());
-	}
+		h = new TMBmujeres(peso_k, altura_cen, edad);
+		System.out.println(h.calculo());
+	}*/ // No se porque no funciona el menu, le agradesco si me puede explicar porque.
+	public static void main(String[] args) {
+		TMB h;
+		h = new TMBhombres(75.3,172,21);
+		System.out.println(h.calculo());
+		h = new TMBmujeres(75.3,172,21);
+		System.out.println(h.calculo());
+	} 
 }
